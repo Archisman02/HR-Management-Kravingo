@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const path = require("path");
-const env = require("./environment");
+// const env = require("./environment");
 
 let transporter = nodemailer.createTransport({
   service: "gmail",
@@ -9,8 +9,8 @@ let transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "archisman.mukherjee02",
-    pass: "brunofernandes",
+    user: "",
+    pass: "",
   },
 });
 
